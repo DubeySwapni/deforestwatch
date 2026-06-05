@@ -80,8 +80,7 @@ with inp2:
 
 with inp3:
     user_country = st.selectbox("🌍 Your Country", [
-        "India", "Brazil", "Indonesia", "USA", "China",
-        "Nigeria", "DR Congo", "Malaysia", "Other"
+        "India"
     ])
 
 # ── Calculate ─────────────────────────────────────────────────────
