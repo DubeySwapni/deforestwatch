@@ -16,7 +16,8 @@ st.markdown("""
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap');
 * { font-family: 'Inter', sans-serif; }
 .stApp { background-color: #010b0e; }
-#MainMenu, footer, header { visibility: hidden; }
+footer { visibility: hidden; }
+#MainMenu { visibility: hidden; }
 .block-container { padding-top: 1rem !important; }
 [data-testid="stMetric"] {
     background: linear-gradient(135deg,#011a1f,#010e10);

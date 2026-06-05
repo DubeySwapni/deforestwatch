@@ -25,7 +25,8 @@ st.markdown("""
 }
 
 /* Hide streamlit defaults */
-footer, header { visibility: hidden; }
+footer { visibility: hidden; }
+#MainMenu { visibility: hidden; }
 .block-container { padding-top: 1rem !important; }
 
 /* ── Sidebar ── */
