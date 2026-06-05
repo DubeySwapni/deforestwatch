@@ -24,15 +24,25 @@ st.markdown("""
         radial-gradient(ellipse at 80% 80%, rgba(0,200,150,0.03) 0%, transparent 50%);
 }
 
+/* Hide streamlit defaults */
 footer, header { visibility: hidden; }
 .block-container { padding-top: 1rem !important; }
 
+/* ── Sidebar ── */
+[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, #010e10 0%, #010b0e 100%);
+    border-right: 1px solid rgba(0,255,255,0.15);
+}
+[data-testid="stSidebar"] * { color: #a0f0f0 !important; }
 
+/* ── Metric cards ── */
 [data-testid="stMetric"] {
     background: linear-gradient(135deg, #011a1f 0%, #010e10 100%);
     border: 1px solid rgba(0,255,255,0.2);
     border-radius: 16px;
     padding: 20px !important;
+    position: relative;
+    overflow: hidden;
     transition: border-color 0.3s;
 }
 [data-testid="stMetric"]:hover { border-color: rgba(0,255,255,0.6); }
@@ -50,24 +60,29 @@ footer, header { visibility: hidden; }
 }
 [data-testid="stMetricDelta"] svg { display: none !important; }
 
+/* ── Divider ── */
 hr { border-color: rgba(0,255,255,0.1) !important; }
 
+/* ── Expander ── */
 [data-testid="stExpander"] {
     background: #011a1f;
     border: 1px solid rgba(0,255,255,0.15) !important;
     border-radius: 12px !important;
 }
 
+/* ── Multiselect tags ── */
 [data-testid="stMultiSelect"] span[data-baseweb="tag"] {
     background-color: rgba(0,255,255,0.15) !important;
     border: 1px solid rgba(0,255,255,0.4) !important;
     color: #00ffff !important;
 }
 
+/* ── Slider ── */
 [data-testid="stSlider"] [data-baseweb="slider"] [role="progressbar"] {
     background: linear-gradient(90deg, #00ffff, #00ff99) !important;
 }
 
+/* ── Scrollbar ── */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: #010b0e; }
 ::-webkit-scrollbar-thumb { background: rgba(0,255,255,0.3); border-radius: 3px; }
