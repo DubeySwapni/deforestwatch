@@ -27,23 +27,6 @@ st.markdown("""
 footer, header { visibility: hidden; }
 .block-container { padding-top: 1rem !important; }
 
-[data-testid="stSidebar"] {
-    background: linear-gradient(180deg, #010e10 0%, #010b0e 100%);
-    border-right: 1px solid rgba(0,255,255,0.15);
-}
-[data-testid="stSidebar"] * { color: #a0f0f0 !important; }
-
-[data-testid="stSidebarCollapsedControl"] {
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    background-color: #010e10 !important;
-}
-button[data-testid="collapsedControl"] {
-    display: block !important;
-    visibility: visible !important;
-    color: #00ffff !important;
-}
 
 [data-testid="stMetric"] {
     background: linear-gradient(135deg, #011a1f 0%, #010e10 100%);
