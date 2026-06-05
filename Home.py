@@ -34,7 +34,11 @@ footer, header { visibility: hidden; }
     border-right: 1px solid rgba(0,255,255,0.15);
 }
 [data-testid="stSidebar"] * { color: #a0f0f0 !important; }
-
+/* Keep collapse arrow always visible */
+[data-testid="stSidebarCollapsedControl"] {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
 /* ── Metric cards ── */
 [data-testid="stMetric"] {
     background: linear-gradient(135deg, #011a1f 0%, #010e10 100%);
