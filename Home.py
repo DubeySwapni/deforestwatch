@@ -401,10 +401,7 @@ st.divider()
 
 # ── Raw data ──────────────────────────────────────────────────────
 with st.expander("🛰️ View Raw Satellite Data"):
-    st.dataframe(
-        filtered.style.background_gradient(subset=['loss_km2'], cmap='Reds'),
-        use_container_width=True
-    )
+    st.dataframe(filtered, use_container_width=True)
 
 # ── Footer ────────────────────────────────────────────────────────
 st.markdown("""
