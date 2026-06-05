@@ -35,6 +35,7 @@ section[data-testid="stSidebar"][aria-expanded="false"] {
     width: 300px !important;
     transform: none !important;
 }
+            
 
 /* ── Sidebar ── */
 [data-testid="stSidebar"] {
@@ -44,6 +45,19 @@ section[data-testid="stSidebar"][aria-expanded="false"] {
     width: 300px !important;
 }
 [data-testid="stSidebar"] * { color: #a0f0f0 !important; }
+/* Keep collapse arrow always visible */
+[data-testid="stSidebarCollapsedControl"] {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    background-color: #010e10 !important;
+}
+
+button[data-testid="collapsedControl"] {
+    display: block !important;
+    visibility: visible !important;
+    color: #00ffff !important;
+}
 
 /* ── Metric cards ── */
 [data-testid="stMetric"] {

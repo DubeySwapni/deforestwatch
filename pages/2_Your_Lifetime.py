@@ -26,6 +26,19 @@ st.markdown("""
 [data-testid="stMetricLabel"] { color: #00ffff !important; font-size:11px !important; font-weight:600 !important; letter-spacing:2px !important; text-transform:uppercase !important; }
 [data-testid="stMetricValue"] { color: #ffffff !important; font-size:26px !important; font-weight:800 !important; }
 [data-testid="stSidebar"] { background:#0d1a0d; border-right:1px solid rgba(0,255,255,0.15); }
+/* Keep collapse arrow always visible */
+[data-testid="stSidebarCollapsedControl"] {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    background-color: #010e10 !important;
+}
+
+button[data-testid="collapsedControl"] {
+    display: block !important;
+    visibility: visible !important;
+    color: #00ffff !important;
+}
 hr { border-color: rgba(0,255,255,0.1) !important; }
 .stSlider [data-baseweb="slider"] [role="progressbar"] {
     background: linear-gradient(90deg, #00ffff, #00ff99) !important;
